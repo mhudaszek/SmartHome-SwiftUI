@@ -16,6 +16,8 @@ struct SmartHomeApp: App {
     @State private var devicesResponse: DevicesResponse
     @State private var finishedOnboardingAnimation: Bool = false
 
+//    @StateObject private var deviceData = DeviceData()
+
     private let firebaseManager = FirebaseManager()
 
     init() {
@@ -26,6 +28,7 @@ struct SmartHomeApp: App {
         WindowGroup {
             if finishedOnboardingAnimation && devicesResponse != .empty {
                 makeHome()
+//                    .environmentObject(deviceData)
             } else {
                 makeOnboarding()
             }
@@ -35,7 +38,7 @@ struct SmartHomeApp: App {
 
 private extension SmartHomeApp {
     func makeHome() -> HomeView {
-        let homeViewModel = HomeViewModel(devices: devicesResponse.devices ?? [])
+        let homeViewModel = HomeViewModel(devices: devicesResponse.devices)
         return HomeView(viewModel: homeViewModel)
     }
 
@@ -50,6 +53,7 @@ private extension SmartHomeApp {
     func fetchData() {
         firebaseManager.fetchDevices { response in
             self.devicesResponse = response
+//            devicesResponse2.objectWillChange = response
         }
     }
 }

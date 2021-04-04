@@ -29,7 +29,7 @@ struct HeaderView: View {
 struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
         HeaderView(headerImage: "photo.on.rectangle.angled",
-                   headerTitle: "gfdgdfgdfgdsgdfg")
+                   headerTitle: "")
             .previewLayout(.sizeThatFits)
             .padding()
             .preferredColorScheme(.dark)

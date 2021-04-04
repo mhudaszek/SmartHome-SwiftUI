@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct CategoryGridView: View {
+    var headerTitle: String
+    
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false, content: {
             LazyHGrid(rows: gridLayout, alignment: .center, spacing: columnSpacing, pinnedViews: [], content: {
                 Section(
-                    header: SectionView(rotateClockwise: false)
+                    header: SectionView(rotateClockwise: false,
+                                        headerTitle: headerTitle)
                 ) {
                     ForEach(0 ..< 4) { item in
                         CategoryItemView()
@@ -27,7 +30,7 @@ struct CategoryGridView: View {
 
 struct CategoryGridView_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryGridView()
+        CategoryGridView(headerTitle: "")
             .previewLayout(.sizeThatFits)
     }
 }

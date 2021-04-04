@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		026450BA261917D3004BD6EE /* RoomItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026450B9261917D3004BD6EE /* RoomItemView.swift */; };
+		026450BD261918A4004BD6EE /* RoomsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026450BC261918A4004BD6EE /* RoomsView.swift */; };
+		026450C22619AA12004BD6EE /* RoomItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026450C12619AA12004BD6EE /* RoomItem.swift */; };
+		026450C72619B696004BD6EE /* RoomDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026450C62619B696004BD6EE /* RoomDetails.swift */; };
+		026450CB2619BBD4004BD6EE /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026450CA2619BBD4004BD6EE /* CloseButton.swift */; };
 		02AB9DB225F2F30400EE4A1A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AB9DB125F2F30400EE4A1A /* HomeViewModel.swift */; };
 		02AB9DB525F2F48700EE4A1A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02AB9DB425F2F48700EE4A1A /* GoogleService-Info.plist */; };
 		02AB9DBA25F2F8C900EE4A1A /* DevicesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AB9DB925F2F8C900EE4A1A /* DevicesResponse.swift */; };
@@ -14,6 +19,8 @@
 		02AB9DC225F37BAD00EE4A1A /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AB9DC125F37BAD00EE4A1A /* OnboardingView.swift */; };
 		02AB9DD625F3851F00EE4A1A /* lamp-outline.json in Resources */ = {isa = PBXBuildFile; fileRef = 02AB9DD525F3851F00EE4A1A /* lamp-outline.json */; };
 		02AB9DD925F3954C00EE4A1A /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AB9DD825F3954C00EE4A1A /* LottieView.swift */; };
+		02AB9DDC25F4D16200EE4A1A /* DeviceDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AB9DDB25F4D16200EE4A1A /* DeviceDetailsViewModel.swift */; };
+		02AB9DDF25F4F35300EE4A1A /* DeviceStateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AB9DDE25F4F35300EE4A1A /* DeviceStateButton.swift */; };
 		02DD41FE25F24BBB0060BA75 /* SmartHomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DD41FD25F24BBB0060BA75 /* SmartHomeApp.swift */; };
 		02DD420025F24BBB0060BA75 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DD41FF25F24BBB0060BA75 /* HomeView.swift */; };
 		02DD420225F24BBD0060BA75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02DD420125F24BBD0060BA75 /* Assets.xcassets */; };
@@ -32,6 +39,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		026450B9261917D3004BD6EE /* RoomItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomItemView.swift; sourceTree = "<group>"; };
+		026450BC261918A4004BD6EE /* RoomsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsView.swift; sourceTree = "<group>"; };
+		026450C12619AA12004BD6EE /* RoomItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomItem.swift; sourceTree = "<group>"; };
+		026450C62619B696004BD6EE /* RoomDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetails.swift; sourceTree = "<group>"; };
+		026450CA2619BBD4004BD6EE /* CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
 		02AB9DB125F2F30400EE4A1A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		02AB9DB425F2F48700EE4A1A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		02AB9DB925F2F8C900EE4A1A /* DevicesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesResponse.swift; sourceTree = "<group>"; };
@@ -39,6 +51,8 @@
 		02AB9DC125F37BAD00EE4A1A /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		02AB9DD525F3851F00EE4A1A /* lamp-outline.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lamp-outline.json"; sourceTree = "<group>"; };
 		02AB9DD825F3954C00EE4A1A /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		02AB9DDB25F4D16200EE4A1A /* DeviceDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailsViewModel.swift; sourceTree = "<group>"; };
+		02AB9DDE25F4F35300EE4A1A /* DeviceStateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceStateButton.swift; sourceTree = "<group>"; };
 		02DD41FA25F24BBB0060BA75 /* SmartHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02DD41FD25F24BBB0060BA75 /* SmartHomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHomeApp.swift; sourceTree = "<group>"; };
 		02DD41FF25F24BBB0060BA75 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -72,6 +86,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		026450B526191392004BD6EE /* Rooms */ = {
+			isa = PBXGroup;
+			children = (
+				026450BC261918A4004BD6EE /* RoomsView.swift */,
+				026450B9261917D3004BD6EE /* RoomItemView.swift */,
+				026450C62619B696004BD6EE /* RoomDetails.swift */,
+			);
+			path = Rooms;
+			sourceTree = "<group>";
+		};
+		026450C02619AA02004BD6EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				026450C12619AA12004BD6EE /* RoomItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		02AB9DB725F2F89500EE4A1A /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +185,8 @@
 		02DD420D25F250A00060BA75 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				026450C02619AA02004BD6EE /* Model */,
+				026450B526191392004BD6EE /* Rooms */,
 				02DD421725F258CB0060BA75 /* Details */,
 				02DD41FF25F24BBB0060BA75 /* HomeView.swift */,
 				02AB9DB125F2F30400EE4A1A /* HomeViewModel.swift */,
@@ -165,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				02DD421825F258E40060BA75 /* DeviceDetailsView.swift */,
+				02AB9DDB25F4D16200EE4A1A /* DeviceDetailsViewModel.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -184,6 +219,8 @@
 				02DD422225F26FFF0060BA75 /* GalleryView.swift */,
 				02DD423525F2984C0060BA75 /* MotionAnimationView.swift */,
 				02DD422D25F2785E0060BA75 /* Category Grid View */,
+				02AB9DDE25F4F35300EE4A1A /* DeviceStateButton.swift */,
+				026450CA2619BBD4004BD6EE /* CloseButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -348,20 +385,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				02DD422B25F277A30060BA75 /* CategoryGridView.swift in Sources */,
+				026450BA261917D3004BD6EE /* RoomItemView.swift in Sources */,
 				02AB9DD925F3954C00EE4A1A /* LottieView.swift in Sources */,
 				02DD421F25F26B600060BA75 /* HeaderView.swift in Sources */,
+				02AB9DDC25F4D16200EE4A1A /* DeviceDetailsViewModel.swift in Sources */,
 				02DD423025F278790060BA75 /* SectionView.swift in Sources */,
+				026450CB2619BBD4004BD6EE /* CloseButton.swift in Sources */,
 				02DD422325F26FFF0060BA75 /* GalleryView.swift in Sources */,
 				02DD420025F24BBB0060BA75 /* HomeView.swift in Sources */,
 				02DD423325F278CB0060BA75 /* CategoryItemView.swift in Sources */,
+				026450C22619AA12004BD6EE /* RoomItem.swift in Sources */,
 				02DD41FE25F24BBB0060BA75 /* SmartHomeApp.swift in Sources */,
 				02DD422725F2775C0060BA75 /* Constants.swift in Sources */,
 				02AB9DB225F2F30400EE4A1A /* HomeViewModel.swift in Sources */,
+				02AB9DDF25F4F35300EE4A1A /* DeviceStateButton.swift in Sources */,
 				02DD423625F2984D0060BA75 /* MotionAnimationView.swift in Sources */,
 				02DD421525F250E50060BA75 /* DeviceCell.swift in Sources */,
 				02DD423B25F29D990060BA75 /* GeometryProxy+Extensions.swift in Sources */,
 				02AB9DBE25F3745400EE4A1A /* FirebaseManager.swift in Sources */,
 				02AB9DC225F37BAD00EE4A1A /* OnboardingView.swift in Sources */,
+				026450BD261918A4004BD6EE /* RoomsView.swift in Sources */,
+				026450C72619B696004BD6EE /* RoomDetails.swift in Sources */,
 				02AB9DBA25F2F8C900EE4A1A /* DevicesResponse.swift in Sources */,
 				02DD421925F258E40060BA75 /* DeviceDetailsView.swift in Sources */,
 			);

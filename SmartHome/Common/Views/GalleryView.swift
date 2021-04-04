@@ -8,19 +8,23 @@
 import SwiftUI
 
 struct GalleryView: View {
+    @State var show = false
+    @Namespace var nameSpace
+
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(alignment: .center, spacing: 15) {
-                ForEach(0 ..< 5) { item in
-                    Image("tv_Image")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(height: 150)
-                        .cornerRadius(12)
+        ZStack {
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(alignment: .center, spacing: 15) {
+                    ForEach(0 ..< 5) { item in
+                        Image("tv_Image")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height: 150)
+                            .cornerRadius(12)
+                    }
                 }
             }
         }
-
     }
 }
 

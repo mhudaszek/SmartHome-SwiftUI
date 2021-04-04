@@ -5,9 +5,12 @@
 //  Created by Mirosław Hudaszek on 06/03/2021.
 //
 
-import Foundation
-import Firebase
+import SwiftUI
 
-struct HomeViewModel {
-    let devices: [Device]
+class HomeViewModel: ObservableObject {
+    @Published var devices: [Device]
+
+    init(devices: [Device]) {
+        self.devices = devices
+    }
 }

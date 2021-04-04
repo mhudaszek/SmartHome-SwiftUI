@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct DeviceCell: View {
-
-    let device: Device
+    var device: Device
 
     var body: some View {
-        HStack {
+        HStack(spacing: 15) {
             Image("lampIcon")
                 .resizable()
                 .scaledToFit()
@@ -24,15 +23,23 @@ struct DeviceCell: View {
                     .font(.title2)
                     .fontWeight(.heavy)
                     .foregroundColor(.accentColor)
-                Text("kjfnsdkjfnskdfnlaksjcmnsadcksdm cmnasc dmnsnfkjlsadnfklasnfkjsandfkjnasdkfjnsdkjfnsdkjfnskljdfnsdk")
+                Text("Living room")
                     .font(.footnote)
-                    .multilineTextAlignment(.leading)
-                    .lineLimit(2)
-                    .padding(.trailing, 8)
-
+                    .padding(.horizontal, 11)
+                    .padding(.vertical, 5)
+                    .background(
+                      Capsule().strokeBorder(Color.white, lineWidth: 1.25)
+                    )
             }
+            Spacer()
+            Image(systemName: device.state
+                    ? "lightbulb"
+                    : "lightbulb.fill")
+                .imageScale(.large)
+                .padding(.trailing, 10)
         }
     }
+
 }
 
 struct DeviceCell_Previews: PreviewProvider {
