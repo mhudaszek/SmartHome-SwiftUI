@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		026450BA261917D3004BD6EE /* RoomItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026450B9261917D3004BD6EE /* RoomItemView.swift */; };
+		026450BD261918A4004BD6EE /* RoomsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026450BC261918A4004BD6EE /* RoomsView.swift */; };
+		026450C22619AA12004BD6EE /* RoomItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026450C12619AA12004BD6EE /* RoomItem.swift */; };
+		026450C72619B696004BD6EE /* RoomDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026450C62619B696004BD6EE /* RoomDetails.swift */; };
+		026450CB2619BBD4004BD6EE /* CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026450CA2619BBD4004BD6EE /* CloseButton.swift */; };
+		02AB9DB225F2F30400EE4A1A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AB9DB125F2F30400EE4A1A /* HomeViewModel.swift */; };
+		02AB9DB525F2F48700EE4A1A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02AB9DB425F2F48700EE4A1A /* GoogleService-Info.plist */; };
+		02AB9DBA25F2F8C900EE4A1A /* DevicesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AB9DB925F2F8C900EE4A1A /* DevicesResponse.swift */; };
+		02AB9DBE25F3745400EE4A1A /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AB9DBD25F3745400EE4A1A /* FirebaseManager.swift */; };
+		02AB9DC225F37BAD00EE4A1A /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AB9DC125F37BAD00EE4A1A /* OnboardingView.swift */; };
+		02AB9DD625F3851F00EE4A1A /* lamp-outline.json in Resources */ = {isa = PBXBuildFile; fileRef = 02AB9DD525F3851F00EE4A1A /* lamp-outline.json */; };
+		02AB9DD925F3954C00EE4A1A /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AB9DD825F3954C00EE4A1A /* LottieView.swift */; };
+		02AB9DDC25F4D16200EE4A1A /* DeviceDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AB9DDB25F4D16200EE4A1A /* DeviceDetailsViewModel.swift */; };
+		02AB9DDF25F4F35300EE4A1A /* DeviceStateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AB9DDE25F4F35300EE4A1A /* DeviceStateButton.swift */; };
+		02DD41FE25F24BBB0060BA75 /* SmartHomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DD41FD25F24BBB0060BA75 /* SmartHomeApp.swift */; };
+		02DD420025F24BBB0060BA75 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DD41FF25F24BBB0060BA75 /* HomeView.swift */; };
+		02DD420225F24BBD0060BA75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02DD420125F24BBD0060BA75 /* Assets.xcassets */; };
+		02DD420525F24BBD0060BA75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02DD420425F24BBD0060BA75 /* Preview Assets.xcassets */; };
+		02DD421525F250E50060BA75 /* DeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DD421425F250E50060BA75 /* DeviceCell.swift */; };
+		02DD421925F258E40060BA75 /* DeviceDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DD421825F258E40060BA75 /* DeviceDetailsView.swift */; };
+		02DD421F25F26B600060BA75 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DD421E25F26B600060BA75 /* HeaderView.swift */; };
+		02DD422325F26FFF0060BA75 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DD422225F26FFF0060BA75 /* GalleryView.swift */; };
+		02DD422725F2775C0060BA75 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DD422625F2775C0060BA75 /* Constants.swift */; };
+		02DD422B25F277A30060BA75 /* CategoryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DD422A25F277A30060BA75 /* CategoryGridView.swift */; };
+		02DD423025F278790060BA75 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DD422F25F278790060BA75 /* SectionView.swift */; };
+		02DD423325F278CB0060BA75 /* CategoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DD423225F278CB0060BA75 /* CategoryItemView.swift */; };
+		02DD423625F2984D0060BA75 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DD423525F2984C0060BA75 /* MotionAnimationView.swift */; };
+		02DD423B25F29D990060BA75 /* GeometryProxy+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DD423A25F29D990060BA75 /* GeometryProxy+Extensions.swift */; };
+		762B135FD83CCEA1E87CAE26 /* Pods_SmartHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E509E4A3ED04C18EAF0F2E77 /* Pods_SmartHome.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		026450B9261917D3004BD6EE /* RoomItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomItemView.swift; sourceTree = "<group>"; };
+		026450BC261918A4004BD6EE /* RoomsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsView.swift; sourceTree = "<group>"; };
+		026450C12619AA12004BD6EE /* RoomItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomItem.swift; sourceTree = "<group>"; };
+		026450C62619B696004BD6EE /* RoomDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetails.swift; sourceTree = "<group>"; };
+		026450CA2619BBD4004BD6EE /* CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseButton.swift; sourceTree = "<group>"; };
+		02AB9DB125F2F30400EE4A1A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		02AB9DB425F2F48700EE4A1A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		02AB9DB925F2F8C900EE4A1A /* DevicesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesResponse.swift; sourceTree = "<group>"; };
+		02AB9DBD25F3745400EE4A1A /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		02AB9DC125F37BAD00EE4A1A /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		02AB9DD525F3851F00EE4A1A /* lamp-outline.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lamp-outline.json"; sourceTree = "<group>"; };
+		02AB9DD825F3954C00EE4A1A /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		02AB9DDB25F4D16200EE4A1A /* DeviceDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailsViewModel.swift; sourceTree = "<group>"; };
+		02AB9DDE25F4F35300EE4A1A /* DeviceStateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceStateButton.swift; sourceTree = "<group>"; };
+		02DD41FA25F24BBB0060BA75 /* SmartHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02DD41FD25F24BBB0060BA75 /* SmartHomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHomeApp.swift; sourceTree = "<group>"; };
+		02DD41FF25F24BBB0060BA75 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		02DD420125F24BBD0060BA75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02DD420425F24BBD0060BA75 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		02DD420625F24BBD0060BA75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02DD421425F250E50060BA75 /* DeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCell.swift; sourceTree = "<group>"; };
+		02DD421825F258E40060BA75 /* DeviceDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailsView.swift; sourceTree = "<group>"; };
+		02DD421E25F26B600060BA75 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		02DD422225F26FFF0060BA75 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		02DD422625F2775C0060BA75 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		02DD422A25F277A30060BA75 /* CategoryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryGridView.swift; sourceTree = "<group>"; };
+		02DD422F25F278790060BA75 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		02DD423225F278CB0060BA75 /* CategoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemView.swift; sourceTree = "<group>"; };
+		02DD423525F2984C0060BA75 /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
+		02DD423A25F29D990060BA75 /* GeometryProxy+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeometryProxy+Extensions.swift"; sourceTree = "<group>"; };
+		AE0520323D749792C3C7D736 /* Pods-SmartHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHome.debug.xcconfig"; path = "Target Support Files/Pods-SmartHome/Pods-SmartHome.debug.xcconfig"; sourceTree = "<group>"; };
+		E509E4A3ED04C18EAF0F2E77 /* Pods_SmartHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F84AABB94FBEF42F4C7AA8E0 /* Pods-SmartHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHome.release.xcconfig"; path = "Target Support Files/Pods-SmartHome/Pods-SmartHome.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02DD41F725F24BBB0060BA75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				762B135FD83CCEA1E87CAE26 /* Pods_SmartHome.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		026450B526191392004BD6EE /* Rooms */ = {
+			isa = PBXGroup;
+			children = (
+				026450BC261918A4004BD6EE /* RoomsView.swift */,
+				026450B9261917D3004BD6EE /* RoomItemView.swift */,
+				026450C62619B696004BD6EE /* RoomDetails.swift */,
+			);
+			path = Rooms;
+			sourceTree = "<group>";
+		};
+		026450C02619AA02004BD6EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				026450C12619AA12004BD6EE /* RoomItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		02AB9DB725F2F89500EE4A1A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				02AB9DB825F2F89D00EE4A1A /* Devices */,
+				02AB9DBD25F3745400EE4A1A /* FirebaseManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		02AB9DB825F2F89D00EE4A1A /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				02AB9DB925F2F8C900EE4A1A /* DevicesResponse.swift */,
+			);
+			path = Devices;
+			sourceTree = "<group>";
+		};
+		02AB9DC025F37B9600EE4A1A /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				02AB9DC125F37BAD00EE4A1A /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		02AB9DD425F3850000EE4A1A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				02AB9DD525F3851F00EE4A1A /* lamp-outline.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		02DD41F125F24BBB0060BA75 = {
+			isa = PBXGroup;
+			children = (
+				02DD41FC25F24BBB0060BA75 /* SmartHome */,
+				02DD41FB25F24BBB0060BA75 /* Products */,
+				759DA766D04C594FF26C6B50 /* Pods */,
+				4830838EEDB47B6B940B27B7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		02DD41FB25F24BBB0060BA75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02DD41FA25F24BBB0060BA75 /* SmartHome.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02DD41FC25F24BBB0060BA75 /* SmartHome */ = {
+			isa = PBXGroup;
+			children = (
+				02AB9DB725F2F89500EE4A1A /* API */,
+				02DD423925F29D860060BA75 /* Extensions */,
+				02DD422525F2774D0060BA75 /* Utility */,
+				02DD41FD25F24BBB0060BA75 /* SmartHomeApp.swift */,
+				02DD421C25F26B0C0060BA75 /* Common */,
+				02AB9DC025F37B9600EE4A1A /* Onboarding */,
+				02AB9DD425F3850000EE4A1A /* Resources */,
+				02DD420D25F250A00060BA75 /* Home */,
+				02DD420125F24BBD0060BA75 /* Assets.xcassets */,
+				02DD420625F24BBD0060BA75 /* Info.plist */,
+				02AB9DB425F2F48700EE4A1A /* GoogleService-Info.plist */,
+				02DD420325F24BBD0060BA75 /* Preview Content */,
+			);
+			path = SmartHome;
+			sourceTree = "<group>";
+		};
+		02DD420325F24BBD0060BA75 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				02DD420425F24BBD0060BA75 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		02DD420D25F250A00060BA75 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				026450C02619AA02004BD6EE /* Model */,
+				026450B526191392004BD6EE /* Rooms */,
+				02DD421725F258CB0060BA75 /* Details */,
+				02DD41FF25F24BBB0060BA75 /* HomeView.swift */,
+				02AB9DB125F2F30400EE4A1A /* HomeViewModel.swift */,
+				02DD421425F250E50060BA75 /* DeviceCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		02DD421725F258CB0060BA75 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				02DD421825F258E40060BA75 /* DeviceDetailsView.swift */,
+				02AB9DDB25F4D16200EE4A1A /* DeviceDetailsViewModel.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		02DD421C25F26B0C0060BA75 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				02DD421D25F26B130060BA75 /* Views */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		02DD421D25F26B130060BA75 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				02DD421E25F26B600060BA75 /* HeaderView.swift */,
+				02DD422225F26FFF0060BA75 /* GalleryView.swift */,
+				02DD423525F2984C0060BA75 /* MotionAnimationView.swift */,
+				02DD422D25F2785E0060BA75 /* Category Grid View */,
+				02AB9DDE25F4F35300EE4A1A /* DeviceStateButton.swift */,
+				026450CA2619BBD4004BD6EE /* CloseButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		02DD422525F2774D0060BA75 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				02DD422625F2775C0060BA75 /* Constants.swift */,
+				02AB9DD825F3954C00EE4A1A /* LottieView.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		02DD422D25F2785E0060BA75 /* Category Grid View */ = {
+			isa = PBXGroup;
+			children = (
+				02DD422A25F277A30060BA75 /* CategoryGridView.swift */,
+				02DD423225F278CB0060BA75 /* CategoryItemView.swift */,
+				02DD422F25F278790060BA75 /* SectionView.swift */,
+			);
+			path = "Category Grid View";
+			sourceTree = "<group>";
+		};
+		02DD423925F29D860060BA75 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				02DD423A25F29D990060BA75 /* GeometryProxy+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4830838EEDB47B6B940B27B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E509E4A3ED04C18EAF0F2E77 /* Pods_SmartHome.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		759DA766D04C594FF26C6B50 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE0520323D749792C3C7D736 /* Pods-SmartHome.debug.xcconfig */,
+				F84AABB94FBEF42F4C7AA8E0 /* Pods-SmartHome.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02DD41F925F24BBB0060BA75 /* SmartHome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02DD420925F24BBD0060BA75 /* Build configuration list for PBXNativeTarget "SmartHome" */;
+			buildPhases = (
+				DE6D9BF18502229CCE493C40 /* [CP] Check Pods Manifest.lock */,
+				02DD41F625F24BBB0060BA75 /* Sources */,
+				02DD41F725F24BBB0060BA75 /* Frameworks */,
+				02DD41F825F24BBB0060BA75 /* Resources */,
+				88F1D910D1DC3C37354A34D1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartHome;
+			productName = SmartHome;
+			productReference = 02DD41FA25F24BBB0060BA75 /* SmartHome.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02DD41F225F24BBB0060BA75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					02DD41F925F24BBB0060BA75 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = 02DD41F525F24BBB0060BA75 /* Build configuration list for PBXProject "SmartHome" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02DD41F125F24BBB0060BA75;
+			productRefGroup = 02DD41FB25F24BBB0060BA75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02DD41F925F24BBB0060BA75 /* SmartHome */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02DD41F825F24BBB0060BA75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02AB9DD625F3851F00EE4A1A /* lamp-outline.json in Resources */,
+				02DD420525F24BBD0060BA75 /* Preview Assets.xcassets in Resources */,
+				02DD420225F24BBD0060BA75 /* Assets.xcassets in Resources */,
+				02AB9DB525F2F48700EE4A1A /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		88F1D910D1DC3C37354A34D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartHome/Pods-SmartHome-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartHome/Pods-SmartHome-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartHome/Pods-SmartHome-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE6D9BF18502229CCE493C40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartHome-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02DD41F625F24BBB0060BA75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02DD422B25F277A30060BA75 /* CategoryGridView.swift in Sources */,
+				026450BA261917D3004BD6EE /* RoomItemView.swift in Sources */,
+				02AB9DD925F3954C00EE4A1A /* LottieView.swift in Sources */,
+				02DD421F25F26B600060BA75 /* HeaderView.swift in Sources */,
+				02AB9DDC25F4D16200EE4A1A /* DeviceDetailsViewModel.swift in Sources */,
+				02DD423025F278790060BA75 /* SectionView.swift in Sources */,
+				026450CB2619BBD4004BD6EE /* CloseButton.swift in Sources */,
+				02DD422325F26FFF0060BA75 /* GalleryView.swift in Sources */,
+				02DD420025F24BBB0060BA75 /* HomeView.swift in Sources */,
+				02DD423325F278CB0060BA75 /* CategoryItemView.swift in Sources */,
+				026450C22619AA12004BD6EE /* RoomItem.swift in Sources */,
+				02DD41FE25F24BBB0060BA75 /* SmartHomeApp.swift in Sources */,
+				02DD422725F2775C0060BA75 /* Constants.swift in Sources */,
+				02AB9DB225F2F30400EE4A1A /* HomeViewModel.swift in Sources */,
+				02AB9DDF25F4F35300EE4A1A /* DeviceStateButton.swift in Sources */,
+				02DD423625F2984D0060BA75 /* MotionAnimationView.swift in Sources */,
+				02DD421525F250E50060BA75 /* DeviceCell.swift in Sources */,
+				02DD423B25F29D990060BA75 /* GeometryProxy+Extensions.swift in Sources */,
+				02AB9DBE25F3745400EE4A1A /* FirebaseManager.swift in Sources */,
+				02AB9DC225F37BAD00EE4A1A /* OnboardingView.swift in Sources */,
+				026450BD261918A4004BD6EE /* RoomsView.swift in Sources */,
+				026450C72619B696004BD6EE /* RoomDetails.swift in Sources */,
+				02AB9DBA25F2F8C900EE4A1A /* DevicesResponse.swift in Sources */,
+				02DD421925F258E40060BA75 /* DeviceDetailsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		02DD420725F24BBD0060BA75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		02DD420825F24BBD0060BA75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02DD420A25F24BBD0060BA75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE0520323D749792C3C7D736 /* Pods-SmartHome.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartHome/Preview Content\"";
+				DEVELOPMENT_TEAM = 4NV77GF9J2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SmartHome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftUI.SmartHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		02DD420B25F24BBD0060BA75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F84AABB94FBEF42F4C7AA8E0 /* Pods-SmartHome.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartHome/Preview Content\"";
+				DEVELOPMENT_TEAM = 4NV77GF9J2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SmartHome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftUI.SmartHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02DD41F525F24BBB0060BA75 /* Build configuration list for PBXProject "SmartHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02DD420725F24BBD0060BA75 /* Debug */,
+				02DD420825F24BBD0060BA75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02DD420925F24BBD0060BA75 /* Build configuration list for PBXNativeTarget "SmartHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02DD420A25F24BBD0060BA75 /* Debug */,
+				02DD420B25F24BBD0060BA75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02DD41F225F24BBB0060BA75 /* Project object */;
+}
