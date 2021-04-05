@@ -26,7 +26,7 @@ struct DeviceDetailsView: View {
                     Spacer()
                         .frame(height: 50)
 
-                    DeviceStateButton(isSet: viewModel.$device2.state)
+                    DeviceStateButton(isSet: viewModel.$device.state)
                 }
 
             }
@@ -46,7 +46,7 @@ struct DeviceDetailsView_reviews: PreviewProvider {
         ForEach([DevicePreview.SE.rawValue, DevicePreview.XSMax.rawValue], id: \.self) { deviceName in
 
             NavigationView {
-                DeviceDetailsView(viewModel: .init(device: Device(ResultMap()), deviceState: .constant(false), device2: .constant(Device(ResultMap()))))
+                DeviceDetailsView(viewModel: .init(deviceState: .constant(false), device: .constant(Device(ResultMap()))))
             }
             .preferredColorScheme(.dark)
             .previewDevice(PreviewDevice(rawValue: deviceName))

@@ -9,19 +9,6 @@ import SwiftUI
 
 public typealias ResultMap = [String: Any?]
 
-class DeviceData: ObservableObject {
-    private let firebaseManager = FirebaseManager()
-    @Published var devicesResponse = DevicesResponse([])
-    @Published var devices = [Device]()
-
-    init() {
-        firebaseManager.fetchDevices { deviceResponse in
-            self.devicesResponse = deviceResponse
-            self.devices = deviceResponse.devices
-        }
-    }
-}
-
 struct Device: Identifiable {
     var id: Int
     var title: String?

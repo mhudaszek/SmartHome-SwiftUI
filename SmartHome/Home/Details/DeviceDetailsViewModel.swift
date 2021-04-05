@@ -9,15 +9,11 @@ import Foundation
 import SwiftUI
 
 class DeviceDetailsViewModel {
-    private let device: Device
     @Binding var deviceState: Bool
-    @Binding var device2: Device
+    @Binding var device: Device
 
-    init(device: Device, deviceState: Binding<Bool>, device2: Binding<Device>) {
-        self.device = device
+    init(deviceState: Binding<Bool>, device: Binding<Device>) {
         _deviceState = deviceState
-
-        //
-        _device2 = device2
+        _device = device
     }
 }

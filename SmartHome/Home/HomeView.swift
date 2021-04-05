@@ -8,75 +8,73 @@
 import SwiftUI
 
 struct HomeView: View {
-    private enum HeaderSections: String {
+    enum HeaderSections: String {
         case favoriteScenes = "Favorite scenes"
         case rooms = "Rooms"
         case allDevices = "All devices"
     }
     @StateObject var viewModel: HomeViewModel
-
-    @State var show = false
+    @Binding var showProfile: Bool
     @Namespace var nameSpace
 
     var body: some View {
-        if show {
-            ScrollView {
-                Image("tv_Image")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(height: 300)
-                    .cornerRadius(12)
-                    .matchedGeometryEffect(id: "Card", in: nameSpace)
-            }
-            .transition(.opacity)
-            .edgesIgnoringSafeArea(.all)
-        }
-
         NavigationView {
             List() {
+                HeaderSection(showProfile: $showProfile)
                 CategoryGridView(headerTitle: HeaderSections.favoriteScenes.rawValue)
-
-                Group {
-                    NavigationLink(
-                        destination: RoomsView(),
-                        label: {
-                            HeaderView(headerImage: "photo.on.rectangle.angled",
-                                       headerTitle: HeaderSections.rooms.rawValue)
-                        })
-                    GalleryView()
-                        .padding(.bottom, 20)
-                        .onTapGesture {
-                            withAnimation(.spring()) {
-                                show.toggle()
-                            }
-                        }
-                }
-
-                HeaderView(headerImage: "photo.on.rectangle.angled",
-                           headerTitle: HeaderSections.allDevices.rawValue)
-
-
-                ForEach(0 ..< viewModel.devices.count) { index in
-                    let deviceDetailsViewModel = DeviceDetailsViewModel(device: viewModel.devices[index], deviceState: $viewModel.devices[index].state, device2: $viewModel.devices[index])
-
-                    NavigationLink(destination: DeviceDetailsView(viewModel: deviceDetailsViewModel)) {
-                        DeviceCell(device: viewModel.devices[index])
-                    }
-                }
+                RoomsSection(devices: viewModel.devices)
+                DevicesSection(viewModel: viewModel)
             }
-            .navigationTitle("My Home")
-            .toolbar {
-              ToolbarItem(placement: .navigationBarTrailing) {
-                HStack(spacing: 16) {
-                  Button(action: {
-                    print("List view is activated")
-                  }) {
-                    Image(systemName: "square.fill.text.grid.1x2")
-                      .font(.title2)
-                      .foregroundColor(.accentColor)
-                  }
-                }
-              }
+            .navigationBarHidden(true)
+        }
+    }
+}
+
+struct HeaderSection: View {
+    @Binding var showProfile: Bool
+    var body: some View {
+        HStack {
+            Text("My Smart Home")
+                .font(.system(size: 28, weight: .bold))
+            Spacer()
+            Button(action: { self.showProfile.toggle() }) {
+                Image("lampIcon")
+                    .renderingMode(.original)
+                    .resizable()
+                    .frame(width: 36, height: 36)
+                    .clipShape(Circle())
+            }
+        }
+    }
+}
+
+
+struct RoomsSection: View {
+    var devices: [Device]
+    var body: some View {
+        Group {
+            NavigationLink(
+                destination: RoomsView(devices: devices),
+                label: {
+                    HeaderView(headerImage: "photo.on.rectangle.angled",
+                               headerTitle: HomeView.HeaderSections.rooms.rawValue)
+                })
+            GalleryView()
+                .padding(.bottom, 20)
+        }
+    }
+}
+
+struct DevicesSection: View {
+    @StateObject var viewModel: HomeViewModel
+    var body: some View {
+        HeaderView(headerImage: "photo.on.rectangle.angled",
+                   headerTitle: HomeView.HeaderSections.allDevices.rawValue)
+        ForEach(0 ..< viewModel.devices.count) { index in
+            let deviceDetailsViewModel = DeviceDetailsViewModel( deviceState: $viewModel.devices[index].state, device: $viewModel.devices[index])
+
+            NavigationLink(destination: DeviceDetailsView(viewModel: deviceDetailsViewModel)) {
+                DeviceCell(device: viewModel.devices[index])
             }
         }
     }
@@ -84,8 +82,7 @@ struct HomeView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView(viewModel: .init(devices: []))
+        HomeView(viewModel: .init(devices: []), showProfile: .constant(true))
             .preferredColorScheme(.dark)
-            .environmentObject(DeviceData())
     }
 }

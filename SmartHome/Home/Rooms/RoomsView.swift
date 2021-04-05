@@ -15,6 +15,8 @@ struct RoomsView: View {
     @State var isNavigationBarVisible = true
     @State var isGridLayout = false
 
+    var devices: [Device]
+
     var body: some View {
         ZStack {
             NavigationView {
@@ -75,7 +77,7 @@ struct RoomsView: View {
         if selectedItem != nil {
             ZStack(alignment: .topTrailing) {
                 RoomDetails(room: selectedItem!,
-                            namespace: namespace)
+                            namespace: namespace, device: devices[0])
 
                 CloseButton()
                     .padding(.top, 50)
@@ -101,7 +103,7 @@ struct RoomsView: View {
 struct RoomsView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            RoomsView()
+            RoomsView(devices: [])
         }
     }
 }
